@@ -23,9 +23,10 @@ public class Main {
     }
 
 
+
     public static int[] findSumOfArrays(int[] first, int[] second) {
         Stack<Integer> stack = new Stack();             //LIFO
-        Queue<Integer> q = new LinkedList<>();         //FIFO
+        Queue<Integer> q = new LinkedList<>();          //FIFO
         if(second.length < first.length){
             int[]temp=first;
             first=second;
@@ -90,7 +91,7 @@ public class Main {
 
     public static int[] fillMas(int[] mas) {
         for (byte i = 0; i < mas.length; i++) {
-            mas[i] = (byte) (Math.random() * 10);
+            mas[i] = (int) (Math.random() * 10);
         }
         return mas;
     }
